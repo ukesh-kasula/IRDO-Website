@@ -1,0 +1,59 @@
+<body>
+  <section class="work-section d-flex justify-content-center">
+    <div class="content">
+      <h2>How we work to make<br /><span>a difference</span></h2>
+      <p>
+        We address a wide range of critical issues, including child labor,
+        sanitation, unemployment, and public health concerns like HIV/AIDS, TB,
+        and malaria. Our work is supported by dedicated local donors and the
+        Government of Telangana, allowing us to implement impactful community
+        programs.
+      </p>
+      <a href="#" class="btn-yellow">Sponsor a Life</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <div class="icon red"><i class="fa-solid fa-stethoscope"></i></div>
+        <div class="text">
+          <h3>100,000</h3>
+          <p>people screened for TB, with 562 receiving treatment.</p>
+        </div>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon blue"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="text">
+          <h3>200</h3>
+          <p>students received nutritional and educational support.</p>
+        </div>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon yellow"><i class="fa-solid fa-person-dress"></i></div>
+        <div class="text">
+          <h3>100+</h3>
+          <p>women trained in tailoring to start their own enterprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<div class="card-grid" style="margin-top: 80px">
+  <div class="card card-{{ i }}" *ngFor="let card of cardList; let i = index">
+    <img [src]="card.image" [alt]="card.label" />
+    <div class="card-label">{{ card.label }}</div>
+
+    <div class="details">
+      <h4 class="fs-2">{{ card.label }}</h4>
+      <p class="fs-6 desc">{{ card.desc }}</p>
+      <button
+        class="btn btn-light d-flex align-items-center justify-content-center gap-2 fw-medium"
+      >
+        Donate Us
+        <i class="bi bi-arrow-right fs-4"></i>
+      </button>
+    </div>
+  </div>
+</div>

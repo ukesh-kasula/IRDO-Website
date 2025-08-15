@@ -1,0 +1,57 @@
+<div class="position-relative">
+  <section class="donate-section">
+    <div class="d-flex justify-content-between h-100">
+      <div class="donate-content">
+        <div class="d-flex gap-3 align-items-center">
+          <img src="LOGO.png" alt="Logo" class="logo" />
+          <h2 class="org-name">IRDO</h2>
+        </div>
+        <h1 class="headline">The way you<br />can help us</h1>
+        <p class="text">
+          Every rupee counts. Your contribution helps us provide education,
+          healthcare, nutrition, and safety to rural families in need.
+        </p>
+        <button class="btn btn-light fw-medium">Donate us</button>
+      </div>
+    </div>
+  </section>
+  <div class="donate-images">
+    <img src="the way u can help us.png" class="img-left" />
+  </div>
+</div>
+<div class="annual-report">
+  <div class="heading-cont">
+    <h3 class="heading pt-5 fs-1">Annual Report (2024-2025)</h3>
+  </div>
+  <div class="annual-report-container">
+    <div class="annual-report-card" *ngFor="let report of annualReport">
+      <img [src]="report.image" alt="{{ report.title }}" class="annual-image" />
+      <div class="annual-report-content">
+        <h2 class="annual-title" [innerHTML]="report.title"></h2>
+        <p class="annual-desc" [innerHTML]="report.desc"></p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="heading-cont">
+      <h3 class=" pt-5 fs-1 heading">Reach (2023-24)</h3>
+    </div>
+    <div class="reach-container">
+      <div class="reach-item" *ngFor="let item of reach">
+        <h3 class="reach-title">{{ item.title }}</h3>
+        <div class="reach-box">
+          <div class="reach-count">{{ item.count }}</div>
+          <p class="reach-desc">{{ item.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="donation-banner-wrapper">
+    <div class="donation-banner">
+      <h3>
+        Become a Lifeline — Donate ₹500 Monthly to Empower Rural Communities.
+      </h3>
+    </div>
+    <img src="lastpic.png" class="fimg" />
+  </div>
+</div>

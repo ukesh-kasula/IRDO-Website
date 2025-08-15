@@ -1,0 +1,301 @@
+.donate-section {
+  width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(to right, #ffc535, white);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.donate-content {
+  padding-left: 7vw;
+  max-width: 35vw;
+  margin-top: 11%;
+}
+
+.donate-images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.img-left {
+  width: 60vw;
+  height: auto;
+  position: absolute;
+  top: 43%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.headline {
+  margin-top: 3%;
+  font-size: 350%;
+  font-weight: bold;
+}
+.org-name {
+  color: red;
+  font-size: 250%;
+}
+
+/* -------- Mobile view -------- */
+@media (max-width: 768px) {
+  .donate-section {
+    height: auto;
+    flex-direction: column;
+    background-image: linear-gradient(
+      to bottom,
+      #ffc535,
+      white
+    ); /* vertical gradient for mobile */
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+  }
+
+  .donate-content {
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .donate-images {
+    position: static; /* remove absolute positioning */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .img-left {
+    position: static;
+    width: 100%; /* make image full-width */
+    transform: none;
+  }
+}
+
+/* anula Report..... */
+
+.annual-report {
+  background-image: linear-gradient(to bottom, #90ccfa, white);
+}
+.heading {
+  display: inline-block; /* so border matches text width */
+  border-bottom: 3px solid #F97400; /* line color + thickness */
+  padding-bottom: 3px; /* space between text and line */
+}
+.heading-cont{
+  text-align: center;
+}
+.annual-report-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* auto width per card */
+  gap: 25px;
+  padding: 30px;
+  justify-content: center; /* center the grid block */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.annual-report-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 390px; /* fixed width for consistent centering */
+  height: 85vh;
+}
+
+.annual-report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(80, 158, 227, 0.25);
+}
+
+.annual-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 20px !important;
+}
+
+.annual-report-content {
+  padding: 15px 18px;
+}
+
+.annual-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.annual-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.annual-desc span.number {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+/* Tablet: 2 cards centered */
+@media (max-width: 1024px) {
+  .annual-report-container {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+
+  .annual-report-card {
+    height: auto;
+  }
+}
+
+/* Mobile: 1 card centered */
+@media (max-width: 768px) {
+  .annual-report-container {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .annual-report-card {
+    height: auto;
+    width: 90%;
+    margin-left: 18px;
+  }
+}
+
+/* Reach....... */
+
+.reach-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* shrink to box size */
+  gap: 60px; /* reduced gap */
+  justify-content: center; /* center horizontally */
+  align-items: start;
+  padding: 20px;
+}
+
+.reach-item {
+  text-align: center;
+}
+
+.reach-title {
+  font-size: 1.6rem;
+  font-weight: 550px;
+  margin-bottom: 10px;
+}
+
+.reach-box {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(255, 185, 0, 0.3); /* your color with opacity */
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* faint border like screenshot */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.reach-count {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #f47a00; /* orange */
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.reach-desc {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 35px;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .reach-container {
+    grid-template-columns: repeat(2, auto); /* fit to box size */
+    justify-content: center; /* center horizontally */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .reach-container {
+    grid-template-columns: auto; /* single column */
+    justify-content: center; /* center horizontally */
+  }
+}
+
+/* dfghjgfdsasdfghj */
+
+.donation-banner {
+  position: absolute;
+  background-color: white !important;
+  padding: 15px 25px; /* matches screenshot proportions */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); /* softer shadow */
+  display: inline-block; /* wraps tightly around text */
+  text-align: center;
+  width: 50%;
+  margin-top: 45px;
+  z-index: 1;
+  right: 25%;
+}
+
+.donation-banner h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f57c00; /* orange color */
+  font-weight: 500;
+}
+
+/* Center on page */
+.donation-banner-wrapper {
+  text-align: center;
+  /* margin: px 0; */
+}
+
+@media (max-width: 768px) {
+  .donation-banner {
+    width: 90%;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin: 0 auto 0 auto; /* centers it */
+    position: relative; /* no absolute positioning */
+    top: auto;
+    right: auto;
+  }
+
+  .donation-banner h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .fimg {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+  }
+}
+
+.fimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}

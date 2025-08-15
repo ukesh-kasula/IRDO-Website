@@ -1,0 +1,35 @@
+/* Remove default link hover color */
+.nav-link.custom-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000 !important;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.custom-link:hover {
+  color: #666 !important;
+}
+.head {
+  color: #00884A;
+  font-weight: bolder;
+  font-size: 38px;
+}
+
+/* Donate button gradient color */
+.donate-btn {
+  background: linear-gradient(to right, #ffeb3b, #fbc02d);
+  color: #000;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+  background: linear-gradient(to right, #fff176, #fdd835);
+  color: #000;
+  text-decoration: none;
+}
