@@ -10,7 +10,7 @@ import { Component, destroyPlatform } from '@angular/core';
 export class BecomeADonerComponent {
   protected annualReport: any = [
     {
-      image: 'Bank sec image.jpg',
+      image: 'img1.png',
       title: 'Nutrition awareness session:',
       desc: `
         <ul>
@@ -21,28 +21,28 @@ export class BecomeADonerComponent {
       `,
     },
     {
-      image: 'Bank sec image.jpg',
+      image: 'img2.png',
       title:
         'Accelerating the services for Health and Hygiene promotion in vulnerable community:',
       desc: `More than <span class="number">1Lakh</span> have been screened on TB and <span class="number">562 people</span> have been given TB medicines. Similarly, this year also we are working to eliminate TB by identifying more people with TB patients.`,
     },
     {
-      image: 'Bank sec image.jpg',
+      image: 'img3.png',
       title: 'Education support program:',
       desc: `We distributed notebooks, test books and reading materials to girls studying in economically backward families in Nandanavanam area so that they do not miss out on education. So far, <span class="number">34 girls</span> have received educational assistance in this area.`,
     },
     {
-      image: 'Bank sec image.jpg',
+      image: 'img4.png',
       title: 'VERISK Project: Public Library:',
       desc: `The main purpose of this is to help local students and unemployed individuals to utilize this library and achieve higher positions in life. As part of the Verics project, library has been established in Ravindra Nagar Colony in Uppal area. This library can accommodate nearly <span class="number">50 people</span> to study at the same time. It is particularly suitable for students preparing for competitive examinations.`,
     },
     {
-      image: 'Bank sec image.jpg',
+      image: 'img5.png',
       title: 'Wall Painting:',
       desc: `Children and employees collaborated to create useful paintings for kids on the school walls. In particular, images of fruits, animals, play materials, etc., that children like were placed in the nursery classroom. Similarly, pictures of freedom fighters were put up on the outside walls. This program was joyfully continued with the participation of children, teachers, and company employees.`,
     },
     {
-      image: 'Bank sec image.jpg',
+      image: 'img6.png',
       title: 'HNF Nutrition Project:',
       desc: `A hundred days' nutrition was distributed to <span class="number">200 students</span> in the school. Since most of the children in this center are the children of daily wage labours, it was identified that they have low immunity, and hence we decided to provide this nutrition. After hundred days, we observed that the children showed increased alertness and attention towards their studies. As a result, the teachers and parents were very happy.`,
     },

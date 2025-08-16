@@ -27,6 +27,10 @@
   height: 100%;
   z-index: 1;
 }
+.donatebtn:hover{
+  background-color:#ffc535 ;
+  border: black solid 1px;
+}
 
 .img-left {
   width: 60vw;
@@ -55,10 +59,10 @@
       to bottom,
       #ffc535,
       white
-    ); /* vertical gradient for mobile */
+    );
     text-align: center;
     padding: 20px;
-    margin-top: 55px;
+    margin-top: 20px;
   }
 
   .donate-content {
@@ -75,9 +79,10 @@
   }
 
   .img-left {
-    position: static;
+    position: relative;
     width: 100%; /* make image full-width */
     transform: none;
+    top: 34px;
   }
 }
 
@@ -175,6 +180,7 @@
     width: 90%;
     margin-left: 18px;
   }
+  
 }
 
 /* Reach....... */
