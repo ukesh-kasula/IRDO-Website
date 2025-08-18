@@ -23,4 +23,8 @@ export class FooterComponent implements OnInit {
       message: [null, Validators.required],
     });
   }
+  submitForm(){
+    console.log(this.contactForm.value);
+    
+  }
 }

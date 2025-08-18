@@ -1,10 +1,80 @@
-<div>
-    <div>
-        <div>
-            <h2>Write to Us</h2>
-            <form [formGroup]="contactForm">
-                <input type="text">
-            </form>
+<footer class="footer">
+  <div class="footer-top">
+    <!-- Left: Write to Us -->
+    <div class="footer-contact">
+      <h2 class="footer-title">Write to Us</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <div class="contact-form">
+          <div class="form-row">
+            <input type="text" placeholder="Name" formControlName="name" />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              formControlName="mobileNum"
+              class="phoneInp"
+            />
+          </div>
+          <textarea
+            placeholder="Message...."
+            formControlName="message"
+          ></textarea>
         </div>
+        <button class="btn donate-btn mt-4" type="submit">Submit</button>
+      </form>
     </div>
-</div>
+
+    <!-- Right: Get in Touch -->
+    <div class="footer-social">
+      <h2 class="footer-title">Get In Touch</h2>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom: Info Sections -->
+  <div class="footer-bottom">
+    <div class="footer-col">
+      <h3>IRDO</h3>
+      <ul>
+        <li>Our Mission</li>
+        <li>Our Initiatives</li>
+        <li>Our Impact</li>
+        <li>Our Values</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Programs</h3>
+      <ul>
+        <li>Education</li>
+        <li>Environment</li>
+        <li>Livelihood Training</li>
+        <li>Child Protection</li>
+        <li>Women Hygiene</li>
+        <li>Community Engagement</li>
+        <li>Health Care</li>
+        <li>Nutritional Support</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Address</h3>
+      <p>
+        H.No: 8-12-96/BN/44PART, <br />
+        Bimanagar colony, <br />
+        Hasthinapuram ,<br />
+        Hyderabad-500097.
+      </p>
+      <h3 class="mt-3">Phone Number</h3>
+      <p>9966108788</p>
+    </div>
+
+    <div class="footer-col badge">
+      <img src="award.png" alt="Best NGO Award" />
+    </div>
+  </div>
+</footer>

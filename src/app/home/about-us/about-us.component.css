@@ -1,4 +1,122 @@
-.img{
-    height: 63vh;
-    width: 99vw;
+.about-section {
+  background-color: #fbc02d; /* same yellow as screenshot */
+  text-align: center;
+  padding: 60px 20px 0; /* top and sides padding */
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
+
+/* Title (ABOUT US) */
+.about-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 2px auto 0;
+  border-bottom: 3.5px solid white; /* underline */
+}
+
+/* Subtitle */
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+  margin: 20px 0;
+}
+
+/* Paragraph */
+.about-text {
+  font-size: 1.2rem;
+  max-width: 70%;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Silhouette at bottom */
+.about-silhouette {
+  background-size: cover;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    max-width: 85%;
+  }
+
+  .about-silhouette {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px 0;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.3rem;
+    margin: 15px 0;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+
+  .about-silhouette {
+    height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-section {
+    padding: 30px 12px 0;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    max-width: 95%;
+    line-height: 1.4;
+  }
+
+  .about-silhouette {
+    height: 70px;
+  }
+}
+

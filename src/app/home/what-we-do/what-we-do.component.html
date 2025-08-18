@@ -9,7 +9,7 @@
         Government of Telangana, allowing us to implement impactful community
         programs.
       </p>
-      <a href="#" class="btn-yellow">Sponsor a Life</a>
+      <a routerLink="/home" fragment="becomeADoner" class="btn-yellow">Sponsor a Life</a>
     </div>
 
     <div class="stats">
@@ -50,6 +50,7 @@
       <p class="fs-6 desc">{{ card.desc }}</p>
       <button
         class="btn btn-light d-flex align-items-center justify-content-center gap-2 fw-medium"
+        routerLink="/home" fragment="becomeADoner"
       >
         Donate Us
         <i class="bi bi-arrow-right fs-4"></i>
