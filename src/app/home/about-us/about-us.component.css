@@ -1,10 +1,11 @@
 .about-section {
   background-color: #fbc02d; /* same yellow as screenshot */
   text-align: center;
-  padding: 60px 20px 0; /* top and sides padding */
+  padding: 10px 20px 0; /* top and sides padding */
   position: relative;
   overflow: hidden;
   font-family: Arial, sans-serif;
+  padding-bottom: 220px;
 }
 
 /* Title (ABOUT US) */
@@ -12,9 +13,10 @@
   font-size: 2.2rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
   display: inline-block;
+  margin-top: 30px;
 }
 
 .about-title::after {
@@ -44,13 +46,17 @@
 
 /* Silhouette at bottom */
 .about-silhouette {
-  background-size: cover;
-  height: 120px;
+  background-image: url("/aboutus.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   width: 100%;
-  position: relative;
+  height: 200px; /* desktop default height */
+  background-size: 100% auto; /* fill horizontally, scale height automatically */
+  position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
-
 
 @media (max-width: 1024px) {
   .about-title {
@@ -65,15 +71,12 @@
     font-size: 1.1rem;
     max-width: 85%;
   }
-
-  .about-silhouette {
-    height: 100px;
-  }
 }
 
 @media (max-width: 768px) {
   .about-section {
     padding: 40px 15px 0;
+    padding-bottom: 70px;
   }
 
   .about-title {
@@ -90,15 +93,17 @@
     max-width: 90%;
     line-height: 1.5;
   }
-
   .about-silhouette {
-    height: 80px;
+    background-size: 120% auto; /* stretch a bit more to avoid gaps */
+    background-position: center bottom;
   }
 }
 
 @media (max-width: 400px) {
   .about-section {
     padding: 30px 12px 0;
+    padding-bottom: 70px;
+
   }
 
   .about-title {
@@ -119,4 +124,3 @@
     height: 70px;
   }
 }
-

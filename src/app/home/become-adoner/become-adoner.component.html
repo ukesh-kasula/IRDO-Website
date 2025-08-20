@@ -23,7 +23,7 @@
   <div class="heading-cont">
     <h3 class="heading pt-5 fs-1">Annual Report (2024-2025)</h3>
   </div>
-  <div class="annual-report-container">
+  <div class="annual-report-container desktop-view">
     <div class="annual-report-card" *ngFor="let report of annualReport">
       <img [src]="report.image" alt="{{ report.title }}" class="annual-image" />
       <div class="annual-report-content">
@@ -32,6 +32,27 @@
       </div>
     </div>
   </div>
+
+  <!-- Mobile Carousel -->
+  <div class="carousel-wrapper mobile-view">
+    <div 
+      class="carousel-track" 
+      [style.transform]="'translateX(-' + currentSlide * 100 + '%)'"
+    >
+      <div class="annual-report-card" *ngFor="let report of annualReport">
+        <img [src]="report.image" alt="{{ report.title }}" class="annual-image" />
+        <div class="annual-report-content">
+          <h2 class="annual-title" [innerHTML]="report.title"></h2>
+          <p class="annual-desc" [innerHTML]="report.desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <button class="carousel-btn left" (click)="prevSlide()">‹</button>
+    <button class="carousel-btn right" (click)="nextSlide()">›</button>
+  </div>
+
   <div>
     <div class="heading-cont">
       <h3 class=" pt-5 fs-1 heading">Reach (2023-24)</h3>
@@ -52,6 +73,6 @@
         Become a Lifeline — Donate ₹500 Monthly to Empower Rural Communities.
       </h3>
     </div>
-    <img src="lastpic.png" class="fimg" loading="lazy" />
+    <img src="lastpic.png" class="fimg" />
   </div>
 </div>

@@ -63,7 +63,7 @@
       #ffc535,
       white
     );
-    text-align: center;
+    text-align: start;
     padding: 20px;
     margin-top: 20px;
   }
@@ -176,19 +176,70 @@
 }
 
 /* Mobile: 1 card centered */
+/* Mobile-only carousel */
+/* -------- Desktop view -------- */
+/* .desktop-view {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 25px;
+  padding: 30px;
+  justify-content: center;
+} */
+
+.mobile-view {
+  display: none;
+}
+
+/* -------- Mobile view -------- */
 @media (max-width: 768px) {
-  .annual-report-container {
-    grid-template-columns: auto;
+  .desktop-view {
+    display: none; /* hide grid on mobile */
+  }
+
+  .mobile-view {
+    display: flex;
     justify-content: center;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
   }
 
   .annual-report-card {
-    height: auto;
-    width: 90%;
-    margin-left: 18px;
+    flex: 0 0 100%;        /* each slide full width */
+    margin: 0 auto;        /* center it */
+    text-align: start;
   }
-  
+
+  /* Arrows */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 5;
+  }
+  .carousel-btn.left { left: 10px; }
+  .carousel-btn.right { right: 10px; }
 }
+
+
+
 
 /* Reach....... */
 

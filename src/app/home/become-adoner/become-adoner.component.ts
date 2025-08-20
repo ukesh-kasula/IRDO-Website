@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-become-adoner',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule, RouterLink],
   templateUrl: './become-adoner.component.html',
   styleUrl: './become-adoner.component.css',
 })
@@ -71,4 +71,44 @@ export class BecomeADonerComponent {
       desc: 'Individuals received timely TB treatment and care',
     },
   ];
+  currentSlide = 0;
+
+  nextSlide() {
+    if (this.currentSlide < this.annualReport.length - 1) {
+      this.currentSlide++;
+    } else {
+      this.currentSlide = 0;
+    }
+  }
+
+  prevSlide() {
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
+    } else {
+      this.currentSlide = this.annualReport.length - 1;
+    }
+  }
+  ngAfterViewInit() {
+    const track = document.querySelector<HTMLElement>('.carousel-track');
+    if (!track) return;
+
+    let startX = 0;
+    let currentX = 0;
+    let index = 0;
+    const slides = track.children.length;
+    track.addEventListener('touchstart', (e: TouchEvent) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchmove', (e: TouchEvent) => {
+      currentX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchend', () => {
+      if (startX - currentX > 50 && index < slides - 1) {
+        index++;
+      } else if (currentX - startX > 50 && index > 0) {
+        index--;
+      }
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+  }
 }

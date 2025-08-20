@@ -11,7 +11,7 @@
   color: #666 !important;
 }
 .head {
-  color: #00884A;
+  color: #00884a;
   font-weight: bolder;
   font-size: 38px;
 }
@@ -23,7 +23,7 @@
   font-weight: 600;
   padding: 8px 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   transition: all 0.3s ease;
   margin-left: 18%;
@@ -45,14 +45,22 @@
     display: flex;
     align-items: center;
   }
-  .head{
+  .head {
     font-size: 25px;
     margin-top: 5px;
   }
 
   .navbar-toggler {
-    margin-left: auto; /* push hamburger to the right */
+    margin-left: auto;
     border: none;
+    outline: none !important; /* remove browser default */
+    box-shadow: none !important; /* remove Bootstrap shadow */
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
   }
 
   .donate-btn {
@@ -77,7 +85,36 @@
     display: inline-block;
     margin: 0 auto;
   }
+  
 }
+
+.toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;   /* bar color */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Optional: animate into X when opened */
+.navbar-toggler.collapsed .toggler-icon:nth-child(1) {
+  transform: rotate(0) translate(0, 0);
+}
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
 
 /* Extra small devices (iPhone SE, < 400px) */
 @media (max-width: 400px) {
