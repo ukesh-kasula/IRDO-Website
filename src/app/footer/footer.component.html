@@ -19,7 +19,7 @@
             formControlName="message"
           ></textarea>
         </div>
-        <button class="btn donate-btn mt-4" type="submit">Submit</button>
+        <button class="btn donate-btn mt-4" type="submit" [disabled]="contactForm.invalid">Submit</button>
       </form>
     </div>
 

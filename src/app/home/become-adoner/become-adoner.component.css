@@ -1,6 +1,6 @@
 .donate-section {
   width: 100%;
-  height: 65vh;
+  height: 70vh;
   background-image: linear-gradient(to right, #ffc535, white);
   position: relative;
   z-index: 0;
@@ -13,11 +13,14 @@
   width: 80px;
   height: 80px;
 }
+.text{
+  font-size: 1.2rem;
+}
 
 .donate-content {
-  padding-left: 7vw;
-  max-width: 35vw;
-  margin-top: 11%;
+  padding-left: 12%;
+  max-width: 62%;
+  margin-top: 5%;
 }
 
 .donate-images {
@@ -33,7 +36,7 @@
 }
 
 .img-left {
-  width: 60vw;
+  width: 61vw;
   height: auto;
   position: absolute;
   top: 43%;
@@ -84,7 +87,11 @@
     transform: none;
     top: 34px;
   }
+  .donatebtn{
+    background-color: #ffc535;
+  }
 }
+
 
 /* anula Report..... */
 
@@ -117,7 +124,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 390px; /* fixed width for consistent centering */
-  height: 85vh;
+  height: 100%;
 }
 
 .annual-report-card:hover {

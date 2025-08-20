@@ -26,6 +26,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-left: 18%;
 }
 
 .donate-btn:hover {
@@ -71,7 +72,6 @@
   /* When menu is closed - keep donate button below logo */
   .navbar .d-flex {
     flex: 1;
-    justify-content: center;
   }
   .navbar .d-flex .donate-btn {
     display: inline-block;
