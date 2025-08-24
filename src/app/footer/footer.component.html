@@ -1,6 +1,5 @@
 <footer class="footer">
   <div class="footer-top">
-    <!-- Left: Write to Us -->
     <div class="footer-contact">
       <h2 class="footer-title">Write to Us</h2>
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
@@ -19,11 +18,26 @@
             formControlName="message"
           ></textarea>
         </div>
-        <button class="btn donate-btn mt-4" type="submit" [disabled]="contactForm.invalid">Submit</button>
+        <button
+          class="btn donate-btn mt-4"
+          type="submit"
+          *ngIf="!isLoading"
+          [disabled]="contactForm.invalid"
+        >
+          Submit
+        </button>
+        <button
+          class="btn donate-btn mt-4"
+          *ngIf="isLoading"
+          type="submit"
+          disabled
+        >
+          Sending...
+          <div class="spinner-border spinner-border-sm" role="status"></div>
+        </button>
       </form>
     </div>
 
-    <!-- Right: Get in Touch -->
     <div class="footer-social">
       <h2 class="footer-title">Get In Touch</h2>
       <div class="social-icons">
@@ -35,7 +49,6 @@
     </div>
   </div>
 
-  <!-- Bottom: Info Sections -->
   <div class="footer-bottom">
     <div class="footer-col">
       <h3>IRDO</h3>
@@ -78,3 +91,7 @@
     </div>
   </div>
 </footer>
+<div>
+  <hr />
+  <h5 class="text-center py-3">©2025 IRDO. All Rights Reserved.</h5>
+</div>

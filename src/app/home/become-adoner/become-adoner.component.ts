@@ -47,6 +47,11 @@ export class BecomeADonerComponent {
       title: 'HNF Nutrition Project:',
       desc: `A hundred days' nutrition was distributed to <span class="number">200 students</span> in the school. Since most of the children in this center are the children of daily wage labours, it was identified that they have low immunity, and hence we decided to provide this nutrition. After hundred days, we observed that the children showed increased alertness and attention towards their studies. As a result, the teachers and parents were very happy.`,
     },
+    {
+      image: 'img7.jpg',
+      title: 'Free Distribution of Playing Equipment:',
+      desc: `A hundred days' nutrition was distributed to <span class="number">200 students</span> in the school. Since most of the children in this center are the children of daily wage labours, it was identified that they have low immunity, and hence we decided to provide this nutrition. After hundred days, we observed that the children showed increased alertness and attention towards their studies. As a result, the teachers and parents were very happy.`,
+    },
   ];
 
   protected reach: any = [

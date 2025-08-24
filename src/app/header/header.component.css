@@ -93,7 +93,7 @@
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #333;   /* bar color */
+  background-color: #333;  
   border-radius: 2px;
   transition: all 0.3s ease;
 }
