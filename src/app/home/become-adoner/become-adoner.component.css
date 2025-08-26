@@ -20,7 +20,7 @@
   width: 80px;
   height: 80px;
 }
-.text{
+.text {
   font-size: 1.2rem;
 }
 
@@ -30,12 +30,10 @@
   margin-top: 5%;
 }
 
-.donatebtn:hover{
-  background-color:#ffc535 ;
+.donatebtn:hover {
+  background-color: #ffc535;
   border: black solid 1px;
 }
-
-
 
 .img-left {
   width: 61vw;
@@ -59,62 +57,133 @@
 /* -------- Mobile view -------- */
 @media (max-width: 768px) {
   .donate-section {
-    height: auto;
-    flex-direction: column;
-    background-image: linear-gradient(
-      to bottom,
-      #ffc535,
-      white
-    );
-    text-align: start;
-    padding: 20px;
-    margin-top: 20px;
+    height: auto !important;
+    flex-direction: column Impo !important;
+    background-image: linear-gradient(to bottom, #ffc535, white) !important;
+    text-align: start !important;
+    padding: 20px !important;
+    margin-top: 20px !important;
   }
 
   .donate-content {
-    max-width: 100%;
-    padding-left: 0;
-    margin-top: 20px;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-top: 20px !important;
   }
 
   .donate-images {
-    position: static; /* remove absolute positioning */
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+    position: static !important; /* remove absolute positioning */
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
   }
 
   .img-left {
-    position: relative;
-    width: 100%; /* make image full-width */
-    transform: none;
-    top: 36px;
+    position: relative !important;
+    width: 100% !important; /* make image full-width */
+    transform: none !important;
+    top: 33px !important;
   }
-  .donatebtn{
-    background-color: #ffc535;
+  .donatebtn {
+    background-color: #ffc535 !important;
   }
 }
+@media (max-width: 400px) {
+  .donate-section {
+    height: auto !important;
+    flex-direction: column Impo !important;
+    background-image: linear-gradient(to bottom, #ffc535, white) !important ;
+    text-align: start !important;
+    padding: 20px !important;
+    margin-top: 20px !important;
+  }
 
+  .donate-content {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-top: 20px !important;
+  }
 
+  .donate-images {
+    position: static !important; /* remove absolute positioning */
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  .img-left {
+    position: relative !important;
+    width: 100% !important; /* make image full-width */
+    transform: none !important;
+    top: 33px !important;
+  }
+  .donatebtn {
+    background-color: #ffc535 !important;
+  }
+}
+@media (max-width: 430px) {
+  .donate-section {
+    height: auto !important;
+    flex-direction: column Impo !important;
+    background-image: linear-gradient(to bottom, #ffc535, white) !important;
+    text-align: start !important;
+    padding: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .donate-content {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .donate-images {
+    position: static !important; /* remove absolute positioning */
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  .img-left {
+    position: relative !important;
+    width: 100% !important; /* make image full-width */
+    transform: none !important;
+    top: 35px !important;
+  }
+  .donatebtn {
+    background-color: #ffc535 !important;
+  }
+}
+@media (max-width: 1080px) {
+  .img-left {
+    width: 61vw;
+    height: auto;
+    position: absolute;
+    top: 63%;
+    right: 0;
+    transform: translateY(-50%);
+    background-attachment: fixed;
+  }
+}
 /* anula Report..... */
 
 .annual-report {
   background-image: linear-gradient(to bottom, #90ccfa, white);
 }
 .heading {
-  display: inline-block; /* so border matches text width */
-  border-bottom: 3px solid #F97400; /* line color + thickness */
-  padding-bottom: 3px; /* space between text and line */
+  display: inline-block;
+  border-bottom: 3px solid #f97400;
+  padding-bottom: 3px;
 }
-.heading-cont{
+.heading-cont {
   text-align: center;
 }
 .annual-report-container {
   display: grid;
-  grid-template-columns: repeat(4, auto); /* auto width per card */
+  grid-template-columns: repeat(4, auto);
   gap: 25px;
   padding: 30px;
-  justify-content: center; /* center the grid block */
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -126,7 +195,7 @@
   border: 1px solid #eaeaea;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%; /* fixed width for consistent centering */
+  width: 100%;
   height: 100%;
 }
 
@@ -176,9 +245,27 @@
   .annual-report-card {
     height: auto;
   }
+  .img-left {
+    width: 61vw;
+    height: auto;
+    position: absolute;
+    top: 69%;
+    right: 0;
+    transform: translateY(-50%);
+    background-attachment: fixed;
+  }
+  .donate-content {
+    padding-left: 8%;
+    max-width: 50%;
+    margin-top: 5%;
+  }
+  .donation-banner h3 {
+    margin: 0;
+    font-size: 1rem !important;
+    color: #f57c00; /* orange color */
+    font-weight: 500;
+  }
 }
-
-
 
 .mobile-view {
   display: none;
@@ -207,8 +294,8 @@
   }
 
   .annual-report-card {
-    flex: 0 0 100%;        /* each slide full width */
-    margin: 0 auto;        /* center it */
+    flex: 0 0 100%; /* each slide full width */
+    margin: 0 auto; /* center it */
     text-align: start;
   }
 
@@ -217,7 +304,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -229,12 +316,13 @@
     font-size: 22px;
     z-index: 5;
   }
-  .carousel-btn.left { left: 10px; }
-  .carousel-btn.right { right: 10px; }
+  .carousel-btn.left {
+    left: 10px;
+  }
+  .carousel-btn.right {
+    right: 10px;
+  }
 }
-
-
-
 
 /* Reach....... */
 
