@@ -88,7 +88,7 @@
     position: relative;
     width: 100%; /* make image full-width */
     transform: none;
-    top: 34px;
+    top: 36px;
   }
   .donatebtn{
     background-color: #ffc535;
@@ -126,7 +126,7 @@
   border: 1px solid #eaeaea;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 350px; /* fixed width for consistent centering */
+  width: 100%; /* fixed width for consistent centering */
   height: 100%;
 }
 
@@ -178,16 +178,7 @@
   }
 }
 
-/* Mobile: 1 card centered */
-/* Mobile-only carousel */
-/* -------- Desktop view -------- */
-/* .desktop-view {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 25px;
-  padding: 30px;
-  justify-content: center;
-} */
+
 
 .mobile-view {
   display: none;
