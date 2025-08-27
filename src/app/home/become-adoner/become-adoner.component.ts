@@ -101,12 +101,16 @@ export class BecomeADonerComponent {
     let currentX = 0;
     let index = 0;
     const slides = track.children.length;
+
     track.addEventListener('touchstart', (e: TouchEvent) => {
       startX = e.touches[0].clientX;
+      currentX = startX;
     });
+
     track.addEventListener('touchmove', (e: TouchEvent) => {
       currentX = e.touches[0].clientX;
     });
+
     track.addEventListener('touchend', () => {
       if (startX - currentX > 50 && index < slides - 1) {
         index++;
