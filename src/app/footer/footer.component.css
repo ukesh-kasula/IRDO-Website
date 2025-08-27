@@ -113,16 +113,23 @@
 /* Specific colors */
 .social-icons a:nth-child(1) {
   background-color: #1877f2;
-} /* Facebook */
+} 
 .social-icons a:nth-child(2) {
-  background-color: #e1306c;
-} /* Instagram */
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
 .social-icons a:nth-child(3) {
-  background-color: #ff0000;
-} /* YouTube */
+  background-color: black;
+} 
 .social-icons a:nth-child(4) {
-  background-color: #0a66c2;
-} /* LinkedIn */
+  background-color: #ff0000;
+} 
 
 .social-icons a:hover {
   transform: scale(1.1);
@@ -249,6 +256,6 @@
 }
 
 .phoneInp::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+  -webkit-appearance: none;
+  margin: 0;
+}
